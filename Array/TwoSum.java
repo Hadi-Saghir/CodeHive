@@ -3,6 +3,8 @@ package Array;
 import java.util.HashMap;
 import java.util.Map;
 
+//URL: https://leetcode.com/problems/two-sum
+//Level: Easy
 public class TwoSum {
 
     /**
