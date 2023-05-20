@@ -1,5 +1,5 @@
 # CodeHive
-CodeHive is a Java-based repository that focuses on LeetCode problem solutions. It offers a categorized approach to organizing solutions based on the problem types, such as binary search, tree, and more. The repository serves as a resource for Java developers looking for efficient and well-structured solutions to LeetCode problems.
+CodeHive is a Java-based repository that focuses on LeetCode problem solutions. It offers a categorized approach to organizing solutions based on the problem types, such as binary search, tree, and more. The repository serves as a resource for me and other Java developers looking for efficient and well-structured solutions to LeetCode problems.
 
 1. Browse the repository to find the specific problem category or type you are interested in.
 2. Within each problem category, locate the specific LeetCode problem you want to solve.
