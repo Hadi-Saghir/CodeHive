@@ -2,6 +2,9 @@ package Other;
 
 public class isMatch {
 
+    /**
+     * My initial attempt which was abandoned. I hoped for a more performant algorithem
+     * by avoiding creating and insertion O(N+M) in addition to comparison O(N*M)*/
     public boolean isMatch(String s, String p) {
 
         if(s== null || s.isEmpty()) return false;
@@ -12,27 +15,27 @@ public class isMatch {
         char currS = s.charAt(counterS);
         char currP = p.charAt(counterP);
 
-        boolean immunity = counterP < p.length() - 1 && p.charAt(counterP + 1) == '*';
+
+        while(counterP < p.length() - 1 && counterS < s.length() - 1){
 
 
-        while(currS == currP || currP == '.' || immunity){
-
-            if(++counterP > p.length() - 1 || ++counterS > s.length() - 1){
-                counterS--;
-                break;
-            }
-
-            currS = s.charAt(counterS);
-            currP = p.charAt(counterP);
+            currS = s.charAt(++counterS);
+            currP = p.charAt(++counterP);
 
 
-            while(currP == '*' && counterS < s.length()){
-                if(currS != s.charAt(counterS) || currS == '.'){
+            while(counterP < p.length() + 1 && p.charAt(counterP + 1) == '*' && counterS < s.length() - 1){
+                if( currP != '.' && currS != s.charAt(counterS)){
                     break;
                 }
                 counterS++;
             }
+
+            if(currP == '.'){
+                continue;
+            }
         }
+
+        counterS--;
 
         return counterS == s.length() - 1;
 
