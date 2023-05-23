@@ -14,7 +14,7 @@ public class ThreeSum {
      * coding but, rather, it's about leveraging the power of libraries and frameworks,
      * adapting to different development environments, and effectively deploying your solutions.
      *
-     * p.s. i employs Arrays.sort() in ThreeSumClosest, I had to learn the hard way
+     * p.s. I employs Arrays.sort() in ThreeSumClosest, I had to learn the hard way
      * */
 
     /**
